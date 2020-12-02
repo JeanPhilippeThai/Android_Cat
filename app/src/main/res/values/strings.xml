@@ -8,6 +8,7 @@
     <string name="author">Author</string>
     <string name="url_wiki" translatable="false">Url_Wiki</string>
     <string name="url_post" translatable="false">Url_Post</string>
+    <string name="info">Info</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

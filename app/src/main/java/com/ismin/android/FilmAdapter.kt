@@ -14,6 +14,7 @@ class FilmAdapter(private val films: ArrayList<Film>,private val c: AppCompatAct
         return FilmViewHolder(row)
     }
 
+
     override fun onBindViewHolder(holder: FilmViewHolder, position: Int) {
         val (title, author, date,url_post,url_wiki) = this.films[position]
         holder.txvTitle.text = title
@@ -24,7 +25,6 @@ class FilmAdapter(private val films: ArrayList<Film>,private val c: AppCompatAct
             Picasso.with(c).load(url_post).into(holder.txvImage)
         }
         holder.txvDelete.tag=title //gu
-
 
     }
 

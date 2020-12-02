@@ -1,8 +1,11 @@
 package com.ismin.android
 
+// filmInfo_branch commit "info" button
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +14,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_film_list.*
+import kotlinx.android.synthetic.main.row_film.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -52,7 +56,6 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
                 displayErrorToast(t)
             }
         })
-
 
     }
 
@@ -98,6 +101,12 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
             }
         }
     }
+
+    fun Info(view:View){
+        val film = Film(view.r_film_txv_title.toString(), view.r_film_txv_author.toString(), view.r_film_txv_date.toString(), "", "")
+        goToFilm(film)
+    }
+
     /////////////////////////////////////////Gu
     override fun onFilmCreated(film: Film) {
         filmService.createFilm(film).enqueue {

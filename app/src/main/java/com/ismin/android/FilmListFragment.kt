@@ -64,7 +64,7 @@ class FilmListFragment(c: AppCompatActivity) : Fragment(), OnFilmItemClickListen
             }
     }
 
-    override fun onFIlmItemClickListener(position: Int) {
+    override fun onFilmItemClickListener(position: Int) {
         val clickedFilm: Film = films[position]
         listener.goToFilm(clickedFilm)
     }
