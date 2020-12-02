@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
         setContentView(R.layout.activity_main)
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://ruinan-filmshelf.cleverapps.io")
+            .baseUrl("https://ruinan-bookshelf.cleverapps.io")
             .build()
 
         filmService = retrofit.create(FilmService::class.java)
@@ -42,7 +42,11 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
                 response: Response<ArrayList<Film>>
             ) {
                 val allFilms = response.body()
+                if (allFilms == null) {
+                    println("ss")
+                }
                 allFilms?.forEach {
+                    println(it.url_post)
                     filmshelf.addFilm(it)
                 }
                 displayList()

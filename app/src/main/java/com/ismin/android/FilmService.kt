@@ -6,12 +6,12 @@ import retrofit2.http.*;
 
 interface FilmService {
 
-    @GET("films")
+    @GET("books")
     fun getAllFilms(): Call<ArrayList<Film>>
 
-    @POST("films")
+    @POST("books")
     fun createFilm(@Body() film: Film): Call<Film>
 
-    @DELETE("/films/{title}")//gu
+    @DELETE("/books/{title}")//gu
     fun deleteFilm(@Path("title") title:String):Call<Film>//gu
 }
