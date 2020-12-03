@@ -22,7 +22,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
+class MainActivity : AppCompatActivity(), FilmCreator, AppInfoCreator, FilmCallback {
     private val TAG = MainActivity::class.simpleName
     private val filmshelf = Filmshelf()
     private lateinit var filmService: FilmService;
@@ -85,6 +85,23 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
         a_main_btn_creation.visibility = View.GONE
     }
 
+    fun goToAppInfo(view: View) {
+        val createAppInfoFragment = CreateAppInfoFragment()
+        supportFragmentManager.beginTransaction()
+            .add(R.id.a_main_lyt_container, createAppInfoFragment)
+            .addToBackStack("createAppInfoFragment")
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+            .commit()
+        a_main_btn_creation.visibility = View.GONE
+        a_main_btn_appinfo.visibility = View.GONE
+    }
+
+    override fun goToFilm(film: String) {
+        val intent = Intent(this, FilmInfoActivity::class.java)
+        intent.putExtra("EXTRA_FILM", film)
+        startActivity(intent)
+    }
+
     fun Delete(view:View){
         filmService.deleteFilm(view.tag.toString()).enqueue(){
             onResponse={
@@ -119,16 +136,12 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
         }
     }
 
+
     override fun closeCreateFragment() {
         displayList();
         a_main_btn_creation.visibility = View.VISIBLE
+        a_main_btn_appinfo.visibility = View.VISIBLE
     }
 
-
-    override fun goToFilm(film: String) {
-        val intent = Intent(this, FilmInfoActivity::class.java)
-        intent.putExtra("EXTRA_FILM", film)
-        startActivity(intent)
-    }
 
 }

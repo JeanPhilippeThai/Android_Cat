@@ -7,4 +7,9 @@
     <string name="sauvegarder">Sauvegarder</string>
     <string name="author">Auteur</string>
     <string name="info">Info</string>
+    <string name="app_text" translatable="false">Projet Android ISMIN 2020 - GU Ruinan THAI Jean Philippe
+        \n\nURL des données : https://data.opendatasoft.com/explore/dataset/cats-in-movies%40public/table/
+        \n\nURL de cleverapp : https://ruinan-bookshelf.cleverapps.io
+        \n\nLes données affichées sont l\'affiche d'un film, son titre, son producteur et son année de sortie.
+        \n\nLibrairie utilisée : Picasso </string>
 </resources>

@@ -13,7 +13,7 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.google.android.material.transition.FadeThroughProvider
 
-class CreateFilmFragment : Fragment() {
+class CreateAppInfoFragment : Fragment() {
     private var activity: FilmCreator? = null;
     private lateinit var edtTitle: EditText
     private lateinit var edtAuthor: EditText
@@ -41,8 +41,7 @@ class CreateFilmFragment : Fragment() {
         blackView = rootView.findViewById(R.id.f_create_film_black_view)
 
         rootView.setOnClickListener { activity?.closeCreateFragment() }
-        rootView.findViewById<Button>(R.id.f_create_film_btn_save).setOnClickListener {
-            saveFilm()
+        rootView.findViewById<Button>(R.id.f_create_appinfo_btn_ok).setOnClickListener {
         }
 
         ObjectAnimator.ofFloat(card, "translationY", 300f, 0f)
@@ -70,27 +69,9 @@ class CreateFilmFragment : Fragment() {
         FadeThroughProvider().createDisappear(rootLayout, card)?.start()
     }
 
-    override fun onAttach(context: Context) {
-        if (context is FilmCreator) {
-            activity = context
-        }
-        super.onAttach(context)
-    }
 
-    fun saveFilm() {
-        activity?.onFilmCreated(
-            Film(
-                edtTitle.text.toString(),
-                edtAuthor.text.toString(),
-                edtDate.text.toString(),
-                edturl_post.text.toString(),
-                edturl_wiki.text.toString()
-            )
-        )
-    }
 }
 
-interface FilmCreator {
-    fun onFilmCreated(film: Film)
+interface AppInfoCreator {
     fun closeCreateFragment()
 }

@@ -10,20 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="691a0548-6b7e-4379-90d4-38446c4ad9ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/AppInfoFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/CreateAppInfoFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_app_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/FilmInfoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/FilmInfoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/CreateFilmFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/CreateFilmFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_film_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_film_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +53,7 @@
         <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -197,34 +201,34 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1606874679402" />
-    <state width="1358" height="251" key="GridCell.Tab.0.bottom" timestamp="1607012001301">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state width="1491" height="281" key="GridCell.Tab.0.bottom" timestamp="1607019285762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="206" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1606902099723" />
+    <state width="1491" height="281" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1607019285762" />
     <state width="1358" height="251" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1607012001301" />
     <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1606714107008" />
     <state width="1358" height="139" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1606907368628" />
     <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1606709515621" />
-    <state width="1358" height="251" key="GridCell.Tab.0.center" timestamp="1607012001300">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state width="1491" height="281" key="GridCell.Tab.0.center" timestamp="1607019285762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="206" key="GridCell.Tab.0.center/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1606902099723" />
+    <state width="1491" height="281" key="GridCell.Tab.0.center/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1607019285762" />
     <state width="1358" height="251" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1607012001300" />
     <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1606714107007" />
     <state width="1358" height="139" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1606907368627" />
     <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1606709515620" />
-    <state width="1358" height="251" key="GridCell.Tab.0.left" timestamp="1607012001299">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state width="1491" height="281" key="GridCell.Tab.0.left" timestamp="1607019285724">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="206" key="GridCell.Tab.0.left/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1606902099723" />
+    <state width="1491" height="281" key="GridCell.Tab.0.left/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1607019285724" />
     <state width="1358" height="251" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1607012001299" />
     <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1606714107007" />
     <state width="1358" height="139" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1606907368627" />
     <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1606709515620" />
-    <state width="1358" height="251" key="GridCell.Tab.0.right" timestamp="1607012001300">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state width="1491" height="281" key="GridCell.Tab.0.right" timestamp="1607019285762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="206" key="GridCell.Tab.0.right/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1606902099723" />
+    <state width="1491" height="281" key="GridCell.Tab.0.right/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1607019285762" />
     <state width="1358" height="251" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1607012001300" />
     <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1606714107008" />
     <state width="1358" height="139" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1606907368628" />
@@ -233,10 +237,10 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="220" y="62" key="SettingsEditor/0.23.1440.811@0.23.1440.811" timestamp="1606681082278" />
-    <state x="398" y="280" key="com.intellij.ide.util.TipDialog" timestamp="1607010198829">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="425" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1607020170395">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1606870064788" />
+    <state x="425" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.-122.1920.1080@0.0.1536.864" timestamp="1607020170395" />
     <state x="398" y="278" key="com.intellij.ide.util.TipDialog/0.23.1440.808@0.23.1440.808" timestamp="1607009810883" />
     <state x="398" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.811@0.23.1440.811" timestamp="1607010198829" />
     <state x="398" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.812@0.23.1440.812" timestamp="1606695524868" />
