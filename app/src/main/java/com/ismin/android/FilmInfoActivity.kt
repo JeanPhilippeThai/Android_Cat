@@ -2,6 +2,8 @@ package com.ismin.android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import androidx.activity.OnBackPressedCallback
 import kotlinx.android.synthetic.main.activity_film_info.*
 
 class FilmInfoActivity : AppCompatActivity() {

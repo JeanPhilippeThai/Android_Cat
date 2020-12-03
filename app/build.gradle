@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "com.ismin.androidtp2"
+        applicationId "com.ismin.android"
         minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
