@@ -7,48 +7,13 @@
     android:layout_height="match_parent"
     tools:context="com.ismin.android.FilmInfoActivity">
 
-  <ImageView
-      android:id="@+id/film_image"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="52dp"
+  <WebView
+      android:id="@+id/web"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      tools:srcCompat="@tools:sample/avatars" />
+      app:layout_constraintTop_toTopOf="parent" />
 
-  <TextView
-      android:id="@+id/film_info_title"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="52dp"
-      android:text="Title"
-      android:textSize="30sp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.498"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/film_image" />
-
-  <TextView
-      android:id="@+id/film_info_author"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="52dp"
-      android:text="Author"
-      android:textSize="30sp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/film_info_title" />
-
-  <TextView
-      android:id="@+id/film_info_date"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="40dp"
-      android:text="Date"
-      android:textSize="30sp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/film_info_author" />
 </androidx.constraintlayout.widget.ConstraintLayout>

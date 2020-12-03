@@ -128,7 +128,7 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
     override fun goToFilm(film: String) {
         val intent = Intent(this, FilmInfoActivity::class.java)
         intent.putExtra("EXTRA_FILM", film)
-        startActivityForResult(intent, this.filmInfoActivityRequestCode)
+        startActivity(intent)
     }
 
 }
