@@ -1,38 +1,10 @@
-Part of Android Development - ISMIN 2020
+Projet Android ISMIN 2020
+GU Ruinan - THAI Jean Philippe
 
-Course followed by students of Mines St Etienne, ISMIN - M2 Computer Science.
+Cette application Android permet d'afficher des films de la base de données libre de droit https://data.opendatasoft.com/explore/dataset/cats-in-movies%40public/table/
 
-[![Mines St Etienne](./logo.png)](https://www.mines-stetienne.fr/)
+En bas à gauche se trouve le bouton pour obtenir plus d'information sur l'application.
+En bas à droite se trouve le bouton pour ajouter des éléments de son choix à la liste.
+Pour se faire ces deux boutons ouvrent un nouveau fragment
 
-# TP5: HTTP Requests
-
-## 📝 Goal
-
-The goal is to link the app to a Rest API using [Retrofit](https://square.github.io/retrofit/):
-
-You can either use:
- - your own Book Rest API
- - a generic one accessible on: https://bookshelf-gme.cleverapps.io/books
-
-First:
-- Add retrofit dependencies (see course slides) to `build.gradle` ✅
-
-Then:
-- Create a `BookService` interface ✅
-- Add a `getAllBooks` function with annotations matching the API ✅
-- Create an instance of `retrofit` and instantiate `BookService` with it in `MainActivity` ✅
-- Call `getAllBooks` in the `onCreate` function and display the books returned by the server ✅
-
-- Add a `createBook` function with annotations matching the API
-- Call `createBook` to post a new book to the server and then display the list of books (including the freshly created one)
-
-Finally:
-- Add some Toasts to properly display and handle network errors
-
-## 🚀 Getting Started
-
- - Start Android Studio
- - Select `Open an existing Android Studio project` and pick this directory
-
-That's it! You can code!
-
+Sur chaque élément de la liste il est possible grâce aux deux boutons d'ouvrir une autre activité pour afficher les informations du film ou bien le supprimer de la liste tout en mettant à jour la base de données
