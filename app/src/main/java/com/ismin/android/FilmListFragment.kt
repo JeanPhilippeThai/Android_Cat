@@ -19,7 +19,7 @@ class FilmListFragment(c: AppCompatActivity) : Fragment(), OnFilmItemClickListen
     private lateinit var films: ArrayList<Film>
     private lateinit var rcvFilms: RecyclerView
     private lateinit var listener: FilmCallback
-    public var con:AppCompatActivity=c//gu
+    public var con:AppCompatActivity=c
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
