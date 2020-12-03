@@ -15,11 +15,11 @@ import java.lang.RuntimeException
 
 private const val ARG_BOOKS = "ARG_BOOKS"
 
-class FilmListFragment(c: AppCompatActivity) : Fragment(), OnFilmItemClickListener {
+class FilmListFragment(c: AppCompatActivity) : Fragment() {
     private lateinit var films: ArrayList<Film>
     private lateinit var rcvFilms: RecyclerView
     private lateinit var listener: FilmCallback
-    public var con:AppCompatActivity=c//gu
+    public var con:AppCompatActivity=c
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,11 +62,6 @@ class FilmListFragment(c: AppCompatActivity) : Fragment(), OnFilmItemClickListen
                     putSerializable(ARG_BOOKS, ArrayList(films))
                 }
             }
-    }
-
-    override fun onFIlmItemClickListener(position: Int) {
-        val clickedFilm: Film = films[position]
-        listener.goToFilm(clickedFilm)
     }
 
 }

@@ -3,7 +3,9 @@ package com.ismin.android
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
@@ -11,13 +13,14 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_film_list.*
+import kotlinx.android.synthetic.main.row_film.*
+import kotlinx.android.synthetic.main.row_film.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val FILM_TO_SHOW_EXTRA_KEY = "FILM_TO_SHOW_EXTRA_KEY"
 
 class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
     private val TAG = MainActivity::class.simpleName
@@ -42,11 +45,7 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
                 response: Response<ArrayList<Film>>
             ) {
                 val allFilms = response.body()
-                if (allFilms == null) {
-                    println("ss")
-                }
                 allFilms?.forEach {
-                    println(it.url_post)
                     filmshelf.addFilm(it)
                 }
                 displayList()
@@ -56,7 +55,6 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
                 displayErrorToast(t)
             }
         })
-
 
     }
 
@@ -87,8 +85,6 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
         a_main_btn_creation.visibility = View.GONE
     }
 
-    /////////////////////////////////////////Gu
-
     fun Delete(view:View){
         filmService.deleteFilm(view.tag.toString()).enqueue(){
             onResponse={
@@ -102,7 +98,13 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
             }
         }
     }
-    /////////////////////////////////////////Gu
+
+    fun Info(view:View){
+        //val film = Film(view.findViewById<TextView>(R.id.r_film_txv_title).text.toString(), view.findViewById<TextView>(R.id.r_film_txv_author).text.toString(), view.findViewById<TextView>(R.id.r_film_txv_date).text.toString(), "", "")
+        //On a pas besoin tout l'info du film mais juste url_wiki
+        goToFilm(view.tag.toString())
+    }
+
     override fun onFilmCreated(film: Film) {
         filmService.createFilm(film).enqueue {
             onResponse = {
@@ -123,7 +125,7 @@ class MainActivity : AppCompatActivity(), FilmCreator, FilmCallback {
     }
 
 
-    override fun goToFilm(film: Film) {
+    override fun goToFilm(film: String) {
         val intent = Intent(this, FilmInfoActivity::class.java)
         intent.putExtra("EXTRA_FILM", film)
         startActivityForResult(intent, this.filmInfoActivityRequestCode)

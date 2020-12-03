@@ -12,6 +12,6 @@ interface FilmService {
     @POST("books")
     fun createFilm(@Body() film: Film): Call<Film>
 
-    @DELETE("/books/{title}")//gu
-    fun deleteFilm(@Path("title") title:String):Call<Film>//gu
+    @DELETE("/books/{title}")
+    fun deleteFilm(@Path("title") title:String):Call<Film>
 }

@@ -1,5 +1,5 @@
 package com.ismin.android
 
 interface FilmCallback {
-    fun goToFilm(film: Film)
+    fun goToFilm(film: String)
 }
