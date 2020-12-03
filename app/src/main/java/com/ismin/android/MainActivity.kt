@@ -83,6 +83,7 @@ class MainActivity : AppCompatActivity(), FilmCreator, AppInfoCreator, FilmCallb
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
             .commit()
         a_main_btn_creation.visibility = View.GONE
+        a_main_btn_appinfo.visibility = View.GONE
     }
 
     fun goToAppInfo(view: View) {
@@ -139,6 +140,13 @@ class MainActivity : AppCompatActivity(), FilmCreator, AppInfoCreator, FilmCallb
 
     override fun closeCreateFragment() {
         displayList();
+        a_main_btn_creation.visibility = View.VISIBLE
+        a_main_btn_appinfo.visibility = View.VISIBLE
+    }
+
+    override fun closeAppinfoFragment() {
+        println("ss")
+        displayList()
         a_main_btn_creation.visibility = View.VISIBLE
         a_main_btn_appinfo.visibility = View.VISIBLE
     }
